@@ -211,27 +211,58 @@ document.addEventListener('DOMContentLoaded', () => {
             const submitBtn = document.getElementById('form-submit-btn');
             const originalText = submitBtn.textContent;
             
-            // Feedback visual
+            // Feedback visual de envio
             submitBtn.textContent = 'Enviando...';
             submitBtn.disabled = true;
             submitBtn.style.opacity = '0.7';
 
-            // Simula envio (substituir por integração real)
-            setTimeout(() => {
-                submitBtn.textContent = '✓ Mensagem enviada!';
-                submitBtn.style.backgroundColor = 'var(--color-primary)';
-                submitBtn.style.borderColor = 'var(--color-primary)';
+            // Coleta os dados do formulário
+            const formData = new FormData(contactForm);
+            const object = Object.fromEntries(formData);
+            const json = JSON.stringify(object);
 
-                // Reset após 3 segundos
+            // Envia assincronamente ao Web3Forms
+            fetch('https://api.web3forms.com/submit', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                    'Accept': 'application/json'
+                },
+                body: json
+            })
+            .then(async (response) => {
+                const res = await response.json();
+                if (response.status === 200) {
+                    // Sucesso no envio
+                    submitBtn.textContent = '✓ Mensagem enviada!';
+                    submitBtn.style.backgroundColor = 'var(--color-primary)';
+                    submitBtn.style.borderColor = 'var(--color-primary)';
+                    contactForm.reset();
+                } else {
+                    // Erro retornado pela API
+                    console.error('Erro Web3Forms:', res);
+                    submitBtn.textContent = 'Erro ao enviar!';
+                    submitBtn.style.backgroundColor = '#d32f2f'; // Vermelho de erro
+                    submitBtn.style.borderColor = '#d32f2f';
+                }
+            })
+            .catch((error) => {
+                // Erro de conexão/rede
+                console.error('Erro de rede:', error);
+                submitBtn.textContent = 'Erro de conexão!';
+                submitBtn.style.backgroundColor = '#d32f2f';
+                submitBtn.style.borderColor = '#d32f2f';
+            })
+            .finally(() => {
+                // Restaura o estado original do botão após 4 segundos
                 setTimeout(() => {
                     submitBtn.textContent = originalText;
                     submitBtn.disabled = false;
                     submitBtn.style.opacity = '1';
                     submitBtn.style.backgroundColor = '';
                     submitBtn.style.borderColor = '';
-                    contactForm.reset();
-                }, 3000);
-            }, 1500);
+                }, 4000);
+            });
         });
     }
 
