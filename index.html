@@ -1,0 +1,856 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Psicólogo clínico — atendimento online e presencial. Um espaço seguro e acolhedor para cuidar da sua saúde emocional. Agende sua sessão.">
+    <meta name="keywords" content="psicólogo, psicologia, terapia, atendimento online, saúde mental, ansiedade, depressão">
+    <meta name="author" content="Pedro Francisco">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Pedro Francisco — Psicólogo Clínico">
+    <meta property="og:description" content="Atendimento psicológico online e presencial. Um espaço seguro para cuidar da sua saúde emocional.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="assets/images/foto-profissional.png">
+
+    <title>Pedro Francisco — Psicólogo Clínico | Atendimento Online e Presencial</title>
+
+    <!-- Fontes Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Estilos -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Favicon placeholder -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌿</text></svg>">
+</head>
+<body>
+
+    <!-- ============================================
+         NAVBAR — Cabeçalho fixo
+    ============================================ -->
+    <header class="navbar" id="navbar">
+        <div class="container navbar__inner">
+            <!-- Logo / Nome -->
+            <a href="#" class="navbar__logo" aria-label="Início">
+                <span class="navbar__logo-icon">🌿</span>
+                <span class="navbar__logo-text">Pedro Francisco</span>
+            </a>
+
+            <!-- Navegação desktop -->
+            <nav class="navbar__nav" id="navMenu" aria-label="Navegação principal">
+                <ul class="navbar__links">
+                    <li><a href="#sobre" class="navbar__link">Sobre</a></li>
+                    <li><a href="#especialidades" class="navbar__link">Especialidades</a></li>
+                    <li><a href="#como-funciona" class="navbar__link">Como funciona</a></li>
+                    <li><a href="#contato" class="navbar__link">Contato</a></li>
+                </ul>
+            </nav>
+
+            <!-- Botão CTA navbar -->
+            <a href="#contato" class="btn btn--primary navbar__cta">Agendar conversa</a>
+
+            <!-- Hamburger mobile -->
+            <button class="navbar__hamburger" id="hamburgerBtn" aria-label="Abrir menu" aria-expanded="false">
+                <span class="navbar__hamburger-line"></span>
+                <span class="navbar__hamburger-line"></span>
+                <span class="navbar__hamburger-line"></span>
+            </button>
+        </div>
+
+        <!-- Menu mobile -->
+        <div class="navbar__mobile-menu" id="mobileMenu" aria-hidden="true">
+            <ul class="navbar__mobile-links">
+                <li><a href="#sobre" class="navbar__mobile-link">Sobre</a></li>
+                <li><a href="#especialidades" class="navbar__mobile-link">Especialidades</a></li>
+                <li><a href="#como-funciona" class="navbar__mobile-link">Como funciona</a></li>
+                <li><a href="#contato" class="navbar__mobile-link">Contato</a></li>
+                <li><a href="#contato" class="btn btn--primary navbar__mobile-cta">Agendar conversa</a></li>
+            </ul>
+        </div>
+    </header>
+
+
+    <!-- ============================================
+         HERO — Seção principal
+    ============================================ -->
+    <section class="hero" id="hero">
+        <div class="container hero__inner">
+            <!-- Coluna de texto -->
+            <div class="hero__content reveal-left">
+                <h1 class="hero__title">Um espaço seguro para você se reencontrar</h1>
+                <p class="hero__subtitle">
+                    Atendimento psicológico para quem busca autoconhecimento, equilíbrio emocional 
+                    e um olhar cuidadoso sobre si. Online ou presencial, no seu tempo.
+                </p>
+                <div class="hero__buttons">
+                    <a href="#contato" class="btn btn--primary btn--lg">Agendar conversa</a>
+                    <a href="#sobre" class="btn btn--secondary btn--lg">Conhecer meu trabalho</a>
+                </div>
+                <!-- Selos de confiança -->
+                <div class="hero__badges">
+                    <div class="hero__badge">
+                        <svg class="hero__badge-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" width="20" height="20">
+                            <path d="M9 12l2 2 4-4"/>
+                            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z"/>
+                        </svg>
+                        <span>CRP 06/187751</span>
+                    </div>
+                    <div class="hero__badge">
+                        <svg class="hero__badge-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" width="20" height="20">
+                            <path d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-4 0a1 1 0 01-1-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 01-1 1"/>
+                        </svg>
+                        <span>Atendimento online e presencial</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Coluna da foto -->
+            <div class="hero__image-wrapper reveal-right">
+                <div class="hero__image-blob">
+                    <!-- 📷 FOTO 1 — Retrato profissional principal -->
+                    <!-- Substitua o src abaixo pela foto real do(a) profissional -->
+                    <img 
+                        src="assets/images/foto-profissional.png" 
+                        alt="Pedro Francisco — Psicólogo Clínico, sorrindo de forma acolhedora em seu consultório" 
+                        class="hero__image"
+                        width="520"
+                        height="620"
+                        loading="eager"
+                    >
+                </div>
+                <!-- Elemento decorativo -->
+                <div class="hero__decoration hero__decoration--dots" aria-hidden="true"></div>
+                <div class="hero__decoration hero__decoration--circle" aria-hidden="true"></div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ============================================
+         SOBRE — Apresentação pessoal
+    ============================================ -->
+    <section class="sobre" id="sobre">
+        <div class="container sobre__inner">
+            <!-- Foto -->
+            <div class="sobre__image-wrapper reveal-left">
+                <!-- 📷 FOTO 2 — Foto do consultório ou retrato secundário -->
+                <!-- Substitua o src abaixo pela foto real -->
+                <img 
+                    src="assets/images/foto-consultorio.png" 
+                    alt="Consultório de Pedro Francisco — ambiente acolhedor com poltronas confortáveis e iluminação suave" 
+                    class="sobre__image"
+                    width="500"
+                    height="600"
+                    loading="lazy"
+                >
+                <div class="sobre__image-accent" aria-hidden="true"></div>
+            </div>
+
+            <!-- Texto -->
+            <div class="sobre__content reveal-right">
+                <span class="section-label">Sobre mim</span>
+                <h2 class="section-title">Prazer, sou o Pedro</h2>
+                <div class="sobre__text">
+                    <p>
+                        Sou psicólogo clínico formado pela Universidade de São Paulo (USP) com 
+                        especialização em Terapia Cognitivo-Comportamental (TCC). Há mais de 8 anos 
+                        acompanho pessoas em seus processos de autoconhecimento, transformação e 
+                        cuidado emocional.
+                    </p>
+                    <p>
+                        Acredito que a terapia é um espaço de escuta genuína, sem julgamentos, 
+                        onde você pode se expressar livremente e construir, junto comigo, caminhos 
+                        mais leves e saudáveis para lidar com seus desafios.
+                    </p>
+                    <p>
+                        Meu trabalho é guiado pela empatia, pelo respeito à singularidade de cada 
+                        pessoa e pelo compromisso ético com a profissão. Atendo adolescentes a 
+                        partir de 16 anos e adultos, tanto de forma online quanto presencial.
+                    </p>
+                </div>
+                <!-- Credenciais -->
+                <div class="sobre__credentials">
+                    <div class="sobre__credential">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="22" height="22">
+                            <path d="M4.26 10.147a60.436 60.436 0 00-.491 6.347A48.627 48.627 0 0112 20.904a48.627 48.627 0 018.232-4.41 60.46 60.46 0 00-.491-6.347m-15.482 0a50.57 50.57 0 00-2.658-.813A59.905 59.905 0 0112 3.493a59.902 59.902 0 0110.399 5.84c-.896.248-1.783.52-2.658.814m-15.482 0A50.697 50.697 0 0112 13.489a50.702 50.702 0 017.74-3.342"/>
+                        </svg>
+                        <span>Psicologia — USP</span>
+                    </div>
+                    <div class="sobre__credential">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="22" height="22">
+                            <path d="M9 12.75L11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 01-1.043 3.296 3.745 3.745 0 01-3.296 1.043A3.745 3.745 0 0112 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 01-3.296-1.043 3.745 3.745 0 01-1.043-3.296A3.745 3.745 0 013 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 011.043-3.296 3.746 3.746 0 013.296-1.043A3.746 3.746 0 0112 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 013.296 1.043 3.746 3.746 0 011.043 3.296A3.745 3.745 0 0121 12z"/>
+                        </svg>
+                        <span>Esp. em TCC — CRP 06/187751</span>
+                    </div>
+                    <div class="sobre__credential">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="22" height="22">
+                            <path d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                        </svg>
+                        <span>+8 anos de experiência clínica</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ============================================
+         ESPECIALIDADES — Áreas de atuação
+    ============================================ -->
+    <section class="especialidades" id="especialidades">
+        <div class="container">
+            <div class="section-header reveal-up">
+                <span class="section-label">Áreas de atuação</span>
+                <h2 class="section-title">Como posso te ajudar</h2>
+                <p class="section-description">
+                    Trabalho com diversas demandas emocionais e comportamentais, sempre de forma 
+                    individualizada e respeitando o ritmo de cada pessoa.
+                </p>
+            </div>
+
+            <div class="especialidades__grid">
+                <!-- Card 1 -->
+                <div class="especialidade-card reveal-up" style="--delay: 0.1s">
+                    <div class="especialidade-card__icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                        </svg>
+                    </div>
+                    <h3 class="especialidade-card__title">Ansiedade</h3>
+                    <p class="especialidade-card__text">
+                        Apoio para compreender e lidar com preocupações excessivas, crises de ansiedade e inquietação constante.
+                    </p>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="especialidade-card reveal-up" style="--delay: 0.2s">
+                    <div class="especialidade-card__icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707"/>
+                            <circle cx="12" cy="12" r="4"/>
+                        </svg>
+                    </div>
+                    <h3 class="especialidade-card__title">Depressão</h3>
+                    <p class="especialidade-card__text">
+                        Escuta acolhedora e estratégias para enfrentar o desânimo, a tristeza profunda e a perda de interesse pela vida.
+                    </p>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="especialidade-card reveal-up" style="--delay: 0.3s">
+                    <div class="especialidade-card__icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z"/>
+                        </svg>
+                    </div>
+                    <h3 class="especialidade-card__title">Relacionamentos</h3>
+                    <p class="especialidade-card__text">
+                        Reflexão sobre padrões afetivos, dificuldades de comunicação e construção de vínculos mais saudáveis.
+                    </p>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="especialidade-card reveal-up" style="--delay: 0.4s">
+                    <div class="especialidade-card__icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z"/>
+                        </svg>
+                    </div>
+                    <h3 class="especialidade-card__title">Autoconhecimento</h3>
+                    <p class="especialidade-card__text">
+                        Um processo de olhar para dentro, reconhecer padrões e descobrir novas formas de viver com mais autenticidade.
+                    </p>
+                </div>
+
+                <!-- Card 5 -->
+                <div class="especialidade-card reveal-up" style="--delay: 0.5s">
+                    <div class="especialidade-card__icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M2.25 12l8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25"/>
+                        </svg>
+                    </div>
+                    <h3 class="especialidade-card__title">Luto e perdas</h3>
+                    <p class="especialidade-card__text">
+                        Acolhimento e suporte emocional para atravessar momentos de perda, despedida e transformação de vida.
+                    </p>
+                </div>
+
+                <!-- Card 6 -->
+                <div class="especialidade-card reveal-up" style="--delay: 0.6s">
+                    <div class="especialidade-card__icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z"/>
+                        </svg>
+                    </div>
+                    <h3 class="especialidade-card__title">Estresse e Burnout</h3>
+                    <p class="especialidade-card__text">
+                        Estratégias para gerenciar o esgotamento, recuperar a energia e encontrar um ritmo de vida mais equilibrado.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ============================================
+         COMO FUNCIONA — O processo terapêutico
+    ============================================ -->
+    <section class="processo" id="como-funciona">
+        <div class="container">
+            <div class="section-header reveal-up">
+                <span class="section-label">O processo</span>
+                <h2 class="section-title">Como funciona a terapia</h2>
+                <p class="section-description">
+                    Se você nunca fez terapia, é natural sentir dúvidas. 
+                    Veja como é simples dar o primeiro passo.
+                </p>
+            </div>
+
+            <div class="processo__steps">
+                <!-- Passo 1 -->
+                <div class="processo__step reveal-up" style="--delay: 0.1s">
+                    <div class="processo__step-number">1</div>
+                    <div class="processo__step-content">
+                        <h3 class="processo__step-title">Primeiro contato</h3>
+                        <p class="processo__step-text">
+                            Você me envia uma mensagem pelo WhatsApp ou formulário. 
+                            Respondo suas dúvidas iniciais e combinamos o melhor horário.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Conector -->
+                <div class="processo__connector" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="24" height="24">
+                        <path d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </div>
+
+                <!-- Passo 2 -->
+                <div class="processo__step reveal-up" style="--delay: 0.2s">
+                    <div class="processo__step-number">2</div>
+                    <div class="processo__step-content">
+                        <h3 class="processo__step-title">Sessão inicial</h3>
+                        <p class="processo__step-text">
+                            Na primeira sessão, nos conhecemos. Você compartilha o que te trouxe 
+                            e, juntos, entendemos suas necessidades — sem pressa.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Conector -->
+                <div class="processo__connector" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="24" height="24">
+                        <path d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </div>
+
+                <!-- Passo 3 -->
+                <div class="processo__step reveal-up" style="--delay: 0.3s">
+                    <div class="processo__step-number">3</div>
+                    <div class="processo__step-content">
+                        <h3 class="processo__step-title">Plano terapêutico</h3>
+                        <p class="processo__step-text">
+                            A partir do que conversamos, estruturo um plano de atendimento 
+                            personalizado, com objetivos claros e estratégias adequadas ao seu momento.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Conector -->
+                <div class="processo__connector" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="24" height="24">
+                        <path d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </div>
+
+                <!-- Passo 4 -->
+                <div class="processo__step reveal-up" style="--delay: 0.4s">
+                    <div class="processo__step-number">4</div>
+                    <div class="processo__step-content">
+                        <h3 class="processo__step-title">Acompanhamento</h3>
+                        <p class="processo__step-text">
+                            As sessões seguem com regularidade (semanal ou quinzenal). 
+                            O processo é construído junto com você, sempre respeitando seu ritmo.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ============================================
+         MODALIDADES — Informações práticas
+    ============================================ -->
+    <section class="modalidades" id="modalidades">
+        <div class="container">
+            <div class="section-header reveal-up">
+                <span class="section-label">Informações práticas</span>
+                <h2 class="section-title">Modalidades de atendimento</h2>
+            </div>
+
+            <div class="modalidades__grid">
+                <!-- Online -->
+                <div class="modalidade-card reveal-up" style="--delay: 0.1s">
+                    <div class="modalidade-card__icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M9 17.25v1.007a3 3 0 01-.879 2.122L7.5 21h9l-.621-.621A3 3 0 0115 18.257V17.25m6-12V15a2.25 2.25 0 01-2.25 2.25H5.25A2.25 2.25 0 013 15V5.25A2.25 2.25 0 015.25 3h13.5A2.25 2.25 0 0121 5.25z"/>
+                        </svg>
+                    </div>
+                    <h3 class="modalidade-card__title">Online</h3>
+                    <p class="modalidade-card__text">
+                        Sessões por videochamada em plataforma segura e com criptografia. 
+                        Você participa de onde estiver, com a mesma qualidade do atendimento presencial.
+                    </p>
+                    <ul class="modalidade-card__details">
+                        <li>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><path d="M5 13l4 4L19 7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                            Videochamada com criptografia
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><path d="M5 13l4 4L19 7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                            Atende todo o Brasil
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><path d="M5 13l4 4L19 7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                            Flexibilidade de horários
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Presencial -->
+                <div class="modalidade-card reveal-up" style="--delay: 0.2s">
+                    <div class="modalidade-card__icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z"/>
+                            <path d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z"/>
+                        </svg>
+                    </div>
+                    <h3 class="modalidade-card__title">Presencial</h3>
+                    <p class="modalidade-card__text">
+                        Consultório em ambiente acolhedor e preparado para que você se sinta 
+                        confortável e seguro(a) durante todo o processo.
+                    </p>
+                    <ul class="modalidade-card__details">
+                        <li>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><path d="M5 13l4 4L19 7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                            Ambiente acolhedor e privativo
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><path d="M5 13l4 4L19 7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                            São Paulo — Jardins
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><path d="M5 13l4 4L19 7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                            Fácil acesso por transporte público
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Informações gerais -->
+                <div class="modalidade-card modalidade-card--info reveal-up" style="--delay: 0.3s">
+                    <div class="modalidade-card__icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M11.25 11.25l.041-.02a.75.75 0 011.063.852l-.708 2.836a.75.75 0 001.063.853l.041-.021M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-9-3.75h.008v.008H12V8.25z"/>
+                        </svg>
+                    </div>
+                    <h3 class="modalidade-card__title">Informações gerais</h3>
+                    <p class="modalidade-card__text">
+                        Detalhes sobre a duração das sessões e o processo de agendamento.
+                    </p>
+                    <ul class="modalidade-card__details">
+                        <li>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><path d="M5 13l4 4L19 7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                            Sessões de 50 minutos
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><path d="M5 13l4 4L19 7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                            Frequência semanal ou quinzenal
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><path d="M5 13l4 4L19 7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                            Agendamento simples por WhatsApp
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ============================================
+         FAQ — Perguntas frequentes
+    ============================================ -->
+    <section class="faq" id="faq">
+        <div class="container">
+            <div class="section-header reveal-up">
+                <span class="section-label">Dúvidas</span>
+                <h2 class="section-title">Perguntas frequentes</h2>
+                <p class="section-description">
+                    Algumas perguntas que recebo com frequência. Se a sua dúvida não está aqui, 
+                    sinta-se à vontade para me enviar uma mensagem.
+                </p>
+            </div>
+
+            <div class="faq__accordion reveal-up">
+                <!-- Pergunta 1 -->
+                <div class="faq__item" id="faq-item-1">
+                    <button class="faq__question" aria-expanded="false" aria-controls="faq-answer-1">
+                        <span>Como sei se preciso de terapia?</span>
+                        <svg class="faq__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20">
+                            <path d="M19.5 8.25l-7.5 7.5-7.5-7.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                    <div class="faq__answer" id="faq-answer-1" role="region" aria-labelledby="faq-item-1">
+                        <p>
+                            Se você sente que algo no seu dia a dia está gerando sofrimento — como 
+                            ansiedade, tristeza, dificuldade nos relacionamentos ou insatisfação 
+                            constante — a terapia pode ser um espaço importante de cuidado. Não é 
+                            preciso esperar estar "no limite" para buscar ajuda. A terapia também é 
+                            para quem deseja se conhecer melhor e viver com mais equilíbrio.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Pergunta 2 -->
+                <div class="faq__item" id="faq-item-2">
+                    <button class="faq__question" aria-expanded="false" aria-controls="faq-answer-2">
+                        <span>Quanto tempo dura o tratamento?</span>
+                        <svg class="faq__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20">
+                            <path d="M19.5 8.25l-7.5 7.5-7.5-7.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                    <div class="faq__answer" id="faq-answer-2" role="region" aria-labelledby="faq-item-2">
+                        <p>
+                            Não existe um prazo fixo. O tempo de terapia varia de acordo com a 
+                            demanda, os objetivos e o ritmo de cada pessoa. Algumas questões podem 
+                            ser trabalhadas em meses; outras pedem um acompanhamento mais longo. 
+                            O importante é que o processo é construído de forma transparente, e 
+                            reavaliamos os objetivos juntos ao longo do caminho.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Pergunta 3 -->
+                <div class="faq__item" id="faq-item-3">
+                    <button class="faq__question" aria-expanded="false" aria-controls="faq-answer-3">
+                        <span>O atendimento é sigiloso?</span>
+                        <svg class="faq__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20">
+                            <path d="M19.5 8.25l-7.5 7.5-7.5-7.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                    <div class="faq__answer" id="faq-answer-3" role="region" aria-labelledby="faq-item-3">
+                        <p>
+                            Sim, absolutamente. O sigilo profissional é um dos pilares da psicologia 
+                            e está previsto no Código de Ética do Psicólogo. Tudo o que for 
+                            compartilhado durante as sessões é confidencial e protegido por lei. 
+                            Você pode falar com total segurança.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Pergunta 4 -->
+                <div class="faq__item" id="faq-item-4">
+                    <button class="faq__question" aria-expanded="false" aria-controls="faq-answer-4">
+                        <span>Como funciona o atendimento online?</span>
+                        <svg class="faq__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20">
+                            <path d="M19.5 8.25l-7.5 7.5-7.5-7.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                    <div class="faq__answer" id="faq-answer-4" role="region" aria-labelledby="faq-item-4">
+                        <p>
+                            O atendimento online acontece por videochamada, em uma plataforma segura 
+                            e com criptografia. Você só precisa de um ambiente reservado, conexão à 
+                            internet e um dispositivo com câmera (celular, tablet ou computador). 
+                            A qualidade e a eficácia são as mesmas do atendimento presencial.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Pergunta 5 -->
+                <div class="faq__item" id="faq-item-5">
+                    <button class="faq__question" aria-expanded="false" aria-controls="faq-answer-5">
+                        <span>Você atende por convênio?</span>
+                        <svg class="faq__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20">
+                            <path d="M19.5 8.25l-7.5 7.5-7.5-7.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                    <div class="faq__answer" id="faq-answer-5" role="region" aria-labelledby="faq-item-5">
+                        <p>
+                            Atualmente, o atendimento é particular. Caso necessário, posso fornecer 
+                            recibo para que você solicite reembolso junto ao seu plano de saúde, 
+                            de acordo com a política de cobertura da sua operadora. 
+                            Entre em contato para mais informações.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Pergunta 6 -->
+                <div class="faq__item" id="faq-item-6">
+                    <button class="faq__question" aria-expanded="false" aria-controls="faq-answer-6">
+                        <span>Posso cancelar ou remarcar uma sessão?</span>
+                        <svg class="faq__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20">
+                            <path d="M19.5 8.25l-7.5 7.5-7.5-7.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                    <div class="faq__answer" id="faq-answer-6" role="region" aria-labelledby="faq-item-6">
+                        <p>
+                            Sim. Peço apenas que o cancelamento ou remarcação seja feito com pelo 
+                            menos 24 horas de antecedência. Isso permite reorganizar a agenda e 
+                            oferecer o horário a outra pessoa que esteja aguardando. Cancelamentos 
+                            de última hora podem ter cobrança integral da sessão.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ============================================
+         CTA + CONTATO — Chamada para ação
+    ============================================ -->
+    <section class="contato" id="contato">
+        <div class="container">
+            <!-- CTA de destaque -->
+            <div class="contato__cta reveal-up">
+                <h2 class="contato__cta-title">Pronto(a) para dar o primeiro passo?</h2>
+                <p class="contato__cta-text">
+                    Cuidar de si é um ato de coragem. Se você chegou até aqui, já é um sinal 
+                    de que algo em você pede atenção. Estou aqui para te acolher.
+                </p>
+                <a 
+                    href="https://wa.me/5511999999999?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20uma%20conversa." 
+                    class="btn btn--whatsapp btn--lg"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    id="cta-whatsapp-btn"
+                >
+                    <svg viewBox="0 0 24 24" fill="currentColor" width="22" height="22">
+                        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+                    </svg>
+                    Conversar pelo WhatsApp
+                </a>
+            </div>
+
+            <!-- Formulário de contato -->
+            <div class="contato__form-wrapper reveal-up">
+                <div class="contato__form-header">
+                    <h3 class="contato__form-title">Ou envie uma mensagem</h3>
+                    <p class="contato__form-subtitle">
+                        Preencha o formulário abaixo e retornarei em até 24 horas úteis.
+                    </p>
+                </div>
+
+                <form class="contato__form" id="contactForm" action="#" method="POST">
+                    <div class="form-group">
+                        <label for="contact-name" class="form-label">Nome</label>
+                        <input 
+                            type="text" 
+                            id="contact-name" 
+                            name="name" 
+                            class="form-input" 
+                            placeholder="Seu nome completo" 
+                            required
+                            autocomplete="name"
+                        >
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="contact-email" class="form-label">E-mail</label>
+                            <input 
+                                type="email" 
+                                id="contact-email" 
+                                name="email" 
+                                class="form-input" 
+                                placeholder="seu@email.com"
+                                autocomplete="email"
+                            >
+                        </div>
+                        <div class="form-group">
+                            <label for="contact-phone" class="form-label">Telefone</label>
+                            <input 
+                                type="tel" 
+                                id="contact-phone" 
+                                name="phone" 
+                                class="form-input" 
+                                placeholder="(11) 99999-9999"
+                                autocomplete="tel"
+                            >
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="contact-message" class="form-label">Mensagem <span class="form-optional">(opcional)</span></label>
+                        <textarea 
+                            id="contact-message" 
+                            name="message" 
+                            class="form-input form-textarea" 
+                            placeholder="Conte um pouco sobre o que te motivou a buscar atendimento..."
+                            rows="4"
+                        ></textarea>
+                    </div>
+
+                    <!-- LGPD -->
+                    <div class="form-group form-checkbox-group">
+                        <input type="checkbox" id="contact-lgpd" name="lgpd" class="form-checkbox" required>
+                        <label for="contact-lgpd" class="form-checkbox-label">
+                            Li e concordo com a 
+                            <a href="#politica-privacidade" class="form-link">Política de Privacidade</a>. 
+                            Seus dados serão usados exclusivamente para retorno do contato.
+                        </label>
+                    </div>
+
+                    <button type="submit" class="btn btn--primary btn--lg form-submit" id="form-submit-btn">
+                        Enviar mensagem
+                    </button>
+                </form>
+            </div>
+
+            <!-- Mapa / Localização -->
+            <div class="contato__location reveal-up">
+                <div class="contato__location-info">
+                    <h3 class="contato__location-title">Localização do consultório</h3>
+                    <address class="contato__address">
+                        <p>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="18" height="18">
+                                <path d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <!-- Edite o endereço abaixo -->
+                            Rua Augusta, 1234 — Sala 56<br>
+                            Jardins, São Paulo — SP
+                        </p>
+                    </address>
+                </div>
+                <div class="contato__map">
+                    <!-- Substitua o src do iframe pelo seu endereço real no Google Maps -->
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.1975849734717!2d-46.65586!3d-23.5613!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjPCsDMzJzQwLjciUyA0NsKwMzknMjEuMSJX!5e0!3m2!1spt-BR!2sbr!4v1234567890" 
+                        width="100%" 
+                        height="300" 
+                        style="border:0; border-radius: 16px;" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade"
+                        title="Localização do consultório de Pedro Francisco"
+                    ></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ============================================
+         RODAPÉ
+    ============================================ -->
+    <footer class="footer" id="rodape">
+        <div class="container footer__inner">
+            <div class="footer__main">
+                <!-- Coluna 1 — Marca -->
+                <div class="footer__brand">
+                    <a href="#" class="footer__logo">
+                        <span class="footer__logo-icon">🌿</span>
+                        <span class="footer__logo-text">Pedro Francisco</span>
+                    </a>
+                    <p class="footer__tagline">
+                        Psicólogo Clínico — CRP 06/187751
+                    </p>
+                    <p class="footer__bio">
+                        Cuidado emocional com acolhimento, ética e respeito à sua singularidade.
+                    </p>
+                </div>
+
+                <!-- Coluna 2 — Links -->
+                <div class="footer__links-col">
+                    <h4 class="footer__col-title">Navegação</h4>
+                    <ul class="footer__links">
+                        <li><a href="#sobre">Sobre</a></li>
+                        <li><a href="#especialidades">Especialidades</a></li>
+                        <li><a href="#como-funciona">Como funciona</a></li>
+                        <li><a href="#faq">Perguntas frequentes</a></li>
+                        <li><a href="#contato">Contato</a></li>
+                    </ul>
+                </div>
+
+                <!-- Coluna 3 — Contato -->
+                <div class="footer__links-col">
+                    <h4 class="footer__col-title">Contato</h4>
+                    <ul class="footer__links footer__contact-links">
+                        <li>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="16" height="16">
+                                <path d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <!-- Edite o e-mail abaixo -->
+                            <a href="mailto:contato@pedrofrancisco.com.br">contato@pedrofrancisco.com.br</a>
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="16" height="16">
+                                <path d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <!-- Edite o telefone abaixo -->
+                            <a href="tel:+5511999999999">(11) 99999-9999</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Coluna 4 — Redes sociais -->
+                <div class="footer__links-col">
+                    <h4 class="footer__col-title">Redes sociais</h4>
+                    <div class="footer__social">
+                        <!-- Instagram -->
+                        <a href="https://instagram.com/" target="_blank" rel="noopener noreferrer" class="footer__social-link" aria-label="Instagram">
+                            <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20">
+                                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/>
+                            </svg>
+                        </a>
+                        <!-- LinkedIn -->
+                        <a href="https://linkedin.com/" target="_blank" rel="noopener noreferrer" class="footer__social-link" aria-label="LinkedIn">
+                            <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20">
+                                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Linha de copyright -->
+            <div class="footer__bottom">
+                <p class="footer__copyright">
+                    &copy; 2026 Pedro Francisco — Psicólogo Clínico | CRP 06/187751
+                </p>
+                <div class="footer__legal">
+                    <a href="#politica-privacidade" class="footer__legal-link">Política de Privacidade</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- ============================================
+         BOTÃO FLUTUANTE DE WHATSAPP
+    ============================================ -->
+    <a 
+        href="https://wa.me/5511999999999?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20uma%20conversa." 
+        class="whatsapp-float"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Conversar pelo WhatsApp"
+        id="whatsapp-float-btn"
+    >
+        <svg viewBox="0 0 24 24" fill="currentColor" width="28" height="28">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+        </svg>
+    </a>
+
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
