@@ -650,6 +650,8 @@
                 <form class="contato__form" id="contactForm" action="https://api.web3forms.com/submit" method="POST">
                     <!-- Web3Forms Access Key -->
                     <input type="hidden" name="access_key" value="6e124fee-5dbc-4bda-ac31-7d9254888c2b">
+                    <!-- Honeypot Spam Protection -->
+                    <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
                     
                     <div class="form-group">
                         <label for="contact-name" class="form-label">Nome</label>
